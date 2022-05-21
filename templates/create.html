@@ -1,0 +1,16 @@
+{{ define "create"}}
+{{ template "header"}}
+
+<main role="main" class="inner cover">
+    <h1 class="cover-heading" style="margin: 15px">Your announcement<Form></Form></h1>
+    <form action="/save_article" method="post">
+        <input type="text" name="yourName" id="yourName" class="form-eldos" placeholder="Your name"></textarea><br>
+        <input type="text" name="articleTitle" id="articleTitle" class="form-eldos" placeholder="Title of your text"></textarea><br>
+        <textarea name="textTags" id="textTags" class="form-eldos" placeholder="Any tags relevent to your text"></textarea><br>
+        <textarea name="full_text" id="full_text" class="form-eldos" placeholder="You can share with me anything you want"></textarea><br>
+        <button class="btn btn-lg btn-warning">Append</button>
+    </form>
+</main>
+
+{{ template "footer"}}
+{{ end }}
